@@ -21,7 +21,7 @@ function NavBar() {
       {
         // To show the mobile or normal menu 
         nav ?
-        <ul className='flex invisible lg:visible align-center ' >
+        <ul className='flex hidden lg:inline-flex align-center ' >
           <li className='px-2 text-slate-100'><Link to='/' >Home</Link></li>
           <li className='px-2 text-slate-100'><Link to='/book-an-appointment' >Book a Doc</Link></li>
           <li className='px-2 text-slate-100'><Link to='/profile' >Profile</Link></li>
