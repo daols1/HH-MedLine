@@ -7,9 +7,9 @@ function Profile() {
     <div className='bg-green-50 px-10 md:px-32 pb-20'>
       {/* Dashborad nav */}
       <nav className='flex list-none py-2'>
-        <li ><Link className='pr-2 mr-2 border-b hover:border-b-green-600 ' >Dashbord</Link></li>
-        <li ><Link className='px-2 mx-2 border-b hover:border-b-green-600 ' >Appointments</Link></li>
-        <li ><Link className='px-2 mx-2 border-b hover:border-b-green-600 ' >My Profile</Link></li>
+        <li ><Link to='/profile' className='pr-2 mr-2 border-b hover:border-b-green-600 ' >Dashbord</Link></li>
+        <li ><Link to='/profile/appointments' className='px-2 mx-2 border-b hover:border-b-green-600 ' >Appointments</Link></li>
+        <li ><Link to='/profile/myprofile' className='px-2 mx-2 border-b hover:border-b-green-600 ' >My Profile</Link></li>
       </nav>
         <div className='flex flex-col gap-4 pt-3 pb-12'>
           <p>Next Appointmets</p>
