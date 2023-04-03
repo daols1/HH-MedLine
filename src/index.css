@@ -1,32 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-<<<<<<< HEAD
+
 :root {
-=======
 
-/* :root {
->>>>>>> e7c17e6373c5957a17e561ed4fb95d176a4f2ac3
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-}
-body {
-  margin: 0;
-<<<<<<< HEAD
-padding: 0;
-outline: none;
-box-sizing: border-box;
-}
-=======
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
 }
 
-h1 {
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
@@ -61,5 +43,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
->>>>>>> e7c17e6373c5957a17e561ed4fb95d176a4f2ac3
+}  */

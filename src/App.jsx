@@ -1,16 +1,5 @@
 import './App.css'
-<<<<<<< HEAD
-import BookAppointment from './pages/BookAppointment'
 
-function App() {
-
-  console.log(import.meta.env.VITE_Firebase_Api_Key)
-
-  return (
-   <div className="w-full">
-    <BookAppointment/>
-     </div>
-=======
 import { Route, Routes } from 'react-router-dom'
 import SharedLayout from './components/SharedLayout/SharedLayout'
 import Home from './components/Home/Home'
@@ -36,7 +25,7 @@ function App() {
         <Route path='/*' element={<NotFound />} />
       </Routes >
     </div>
->>>>>>> e7c17e6373c5957a17e561ed4fb95d176a4f2ac3
+
   )
 }
 
