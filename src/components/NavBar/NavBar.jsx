@@ -20,7 +20,7 @@ function NavBar() {
       <img src={Logo} className="h-14 w-14" />
       {
         // To show the mobile or normal menu 
-        !nav ?
+        nav ?
         <ul className='flex hidden lg:inline-flex align-center ' >
           <li className='px-2 text-slate-100'><Link to='/' onClick={() => navHandler()} >Home</Link></li>
           <li className='px-2 text-slate-100'><Link to='/book-an-appointment' onClick={() => navHandler()} >Book a Doc</Link></li>
