@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import SharedLayout from './components/SharedLayout/SharedLayout'
+import Home from './components/Home/Home'
+import Profile from './components/Profile/Profile'
+import BookAnAppoinment from './components/BookAnAppoinment/BookAnAppoinment'
+import Login from './components/Login/Login'
+import SignUp from './components/SignUp/SignUp'
+import NotFound from './components/NotFound/NotFound'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  console.log(import.meta.env.VITE_Firebase_Api_Key)
 
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn Weinwenwienw
-      </p>
+      {/* Routes for pages */}
+      <Routes >
+        <Route path='/' element={<SharedLayout />} >
+          <Route index element= {<Home />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/book-an-appointment' element={<BookAnAppoinment />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<SignUp />} />
+        </Route>
+        <Route path='/*' element={<NotFound />} />
+      </Routes >
     </div>
   )
 }
