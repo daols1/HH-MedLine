@@ -22,9 +22,9 @@ function NavBar() {
         // To show the mobile or normal menu 
         nav ?
         <ul className='flex hidden lg:inline-flex align-center ' >
-          <li className='px-2 text-slate-100'><Link to='/' onClick={() => navHandler()} >Home</Link></li>
-          <li className='px-2 text-slate-100'><Link to='/book-an-appointment' onClick={() => navHandler()} >Book a Doc</Link></li>
-          <li className='px-2 text-slate-100'><Link to='/profile' onClick={() => navHandler()} >Profile</Link></li>
+          <li className='px-2 text-slate-100'><Link to='/'  >Home</Link></li>
+          <li className='px-2 text-slate-100'><Link to='/book-an-appointment'  >Book a Doc</Link></li>
+          <li className='px-2 text-slate-100'><Link to='/profile'  >Profile</Link></li>
           <li className='px-8 rounded hover:bg-green-700 text-slate-100 bg-green-800'><Link to='/signup' >Sign Up</Link></li>
         </ul>
         :
