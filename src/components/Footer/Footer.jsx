@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div>
-      {/* You might still need to add some contents here */}
+      {/* You might still need to add some contents here to make the footer more like a footer :) */}
       <div className='flex flex-col w-full text-center md:flex-row'>
         <div className='bg-green-500 py-2 w-full md:w-1/2 px-10 md:px-32'>
           <p className='text-slate-100'>
