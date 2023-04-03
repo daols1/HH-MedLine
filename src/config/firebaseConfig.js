@@ -7,7 +7,7 @@ import { env } from "process";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  // Added .env Variable TODO
+  // Added .env Variable "TODO"
   apiKey: "AIzaSyBttQBQSjw13A1gDAD78yflTN89UGbYHac",
   authDomain: "hh-medline.firebaseapp.com",
   projectId: "hh-medline",
