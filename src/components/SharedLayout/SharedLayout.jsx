@@ -5,7 +5,7 @@ import NavBar from '../NavBar/NavBar'
 
 function SharedLayout() {
   return (
-    <div>
+    <div className='relative'>
         <NavBar />
             <Outlet />
         <Footer />
