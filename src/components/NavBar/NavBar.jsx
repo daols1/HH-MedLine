@@ -8,11 +8,16 @@ import { motion } from 'framer-motion'
 function NavBar() {
 
   // Screen size logic
-  const [nav, setNav] = useState(true)
+  const [nav, setNav] = useState(false)
 
   const navHandler = () => {
     setNav(!nav)
   }
+
+  // Check screen size
+
+  const screenChcker = window.innerWidth >= 1000
+
 
   return (
     <div className='flex justify-between h-18 items-center px-10 md:px-32 bg-green-600 relative'>
@@ -20,7 +25,7 @@ function NavBar() {
       <img src={Logo} className="h-14 w-14" />
       {
         // To show the mobile or normal menu 
-        nav ?
+        !nav || screenChcker ?
         <ul className='flex hidden lg:inline-flex align-center ' >
           <li className='px-2 text-slate-100'><Link to='/'  >Home</Link></li>
           <li className='px-2 text-slate-100'><Link to='/book-an-appointment'  >Book a Doc</Link></li>
@@ -47,7 +52,7 @@ function NavBar() {
         </motion.div>
       }
       {
-        nav ?
+        !nav ?
           <BiMenuAltRight className='lg:hidden' size={35} color='#fff' onClick={() => navHandler()} />
         :
           // null
