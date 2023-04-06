@@ -39,7 +39,7 @@ function NavBar() {
           damping:80,
           duration:.3,
         }}
-        className='mt-16 bg-green-600 absolute top-0 left-0 w-[100%] text-center py-4 list-none '>
+        className='mt-16 bg-green-600 absolute top-0 left-0 w-[100%] text-center py-4 z-30 list-none '>
           <li className='py-2 text-slate-100'><Link to='/' >Home</Link></li>
           <li className='py-2 text-slate-100'><Link to='/book-an-appointment' >Book a Doc</Link></li>
           <li className='py-2 text-slate-100'><Link to='/profile' >Profile</Link></li>
