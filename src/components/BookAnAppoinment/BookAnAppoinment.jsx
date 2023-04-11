@@ -584,24 +584,24 @@ if (!selectedDate || !selectedTime ) {
          transition={{
            damping:80,
            duration:.8,
-         }}  className='bookappointmentContainer h-fit overflow-hidden  relative px-10 md:px-32 z-10 '>
-  <div className='absolute w-fit rounded-full  left-0 md:right-0 top-0 md:top-4 text-white p-2 bg-green-500'>
-      <small className='font-bold'> Appointments:  {appointments.length }</small>
+         }}  className='bookappointmentContainer h-fit overflow-hidden  relative px-10 md:px-32  '>
+  <div className='absolute w-fit rounded-full  left-3 md:right-0 top-0.5 md:top-4 text-white p-2 bg-green-500'>
+      <small className='font-bold text-sm flex'> <span className=' hidden md:flex'> Appointments:  </span>  {appointments.length }</small>
     </div>
  <div className=' w-full h-fit md:h-screen justify-center items-center flex top-0 mt-2 left-0 relative md:sticky'>
  <motion.div 
-      className=" leftContAppoint  relative w-fit h-fit   shadow-2xl justify-center items-center flex rounded-lg  p-8">
+      className=" leftContAppoint  relative w-fit h-fit shadow-2xl justify-center items-center flex rounded-lg  p-8">
       
 {
   
-    filteredDocs.length!==0 ?  <div onClick={handleClickLeft} className="absolute  bottom-[190px]  left-[-37px] flex justify-center z-0 md:-left-10  items-center p-5 bg-green-600  rounded-full cursor-pointer ">
+    filteredDocs.length!==0 ?  <div onClick={handleClickLeft} className="absolute  bottom-[190px]  left-[-37px] flex justify-center z-0 md:-left-10  items-center p-5 bg-green-600 hover:bg-green-400 transition duration-300 ease-in-out  rounded-full cursor-pointer ">
     <AiOutlineLeft  className=' cursor-pointer text-white'/>
 </div> : null 
 }
        
 {
   
-  filteredDocs.length!==0 ?  <div onClick={handleClickRight} className="absolute bottom-[190px]  z-30 right-[-30px]   p-5 bg-green-600  rounded-full cursor-pointer ">
+  filteredDocs.length!==0 ?  <div onClick={handleClickRight} className="absolute bottom-[190px]  z-30 right-[-30px]   p-5 bg-green-600  rounded-full cursor-pointer hover:bg-green-400 transition duration-300 ease-in-out ">
   <AiOutlineRight  className=' cursor-pointer text-white'/>
 </div> : null 
 }  
@@ -646,7 +646,7 @@ if (!selectedDate || !selectedTime ) {
           transition={{
             damping:80,
             duration:.5,
-          }} className=" relative w-full bg-red-100 justify-center rounded-3xl z-10 h-[300px] items-center flex mr-4">
+          }} className=" relative w-full bg-red-100 justify-center rounded-3xl h-[300px] items-center flex mr-4">
           <span className=' p-1 rounded-xl bg-green-100 absolute pr-2 pl-2 left-16 top-2 text-gray-500 text-sm' >Select a state to see doctors close by </span>
           
           <div className="w-fit p-4 h-fit flex text-justify justify-start flex-col  mt-3 pl-4">
