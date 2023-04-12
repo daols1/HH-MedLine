@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "doctor_details",
+  "info": {
+    "singularName": "doctor-detail",
+    "pluralName": "doctor-details",
+    "displayName": "doctor detail",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "doctorName": {
+      "type": "string"
+    },
+    "specialty": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "isAvailable": {
+      "type": "boolean"
+    },
+    "Location": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "subLocation": {
+      "type": "string"
+    }
+  }
+}
