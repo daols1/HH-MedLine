@@ -645,7 +645,7 @@ if (!selectedDate || !selectedTime ) {
          
           transition={{
             damping:80,
-            duration:.5,
+            duration:.6,
           }} className=" relative w-full bg-red-100 justify-center rounded-3xl h-[300px] items-center flex mr-4">
           <span className=' p-1 rounded-xl bg-green-100 absolute pr-2 pl-2 left-16 top-2 text-gray-500 text-sm' >Select a state to see doctors close by </span>
           
