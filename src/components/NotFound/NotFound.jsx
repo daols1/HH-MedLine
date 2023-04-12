@@ -4,6 +4,7 @@ function NotFound() {
   return (
     <div>
         NotFound
+        {/* Trying to see if i have connected succefully */}
     </div>
   )
 }
