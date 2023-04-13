@@ -10,6 +10,7 @@ import SignUp from './components/SignUp/SignUp'
 import NotFound from './components/NotFound/NotFound'
 import ProfileApointments from './components/ProfileApointments/ProfileApointments'
 import MyProfile from './components/MyProfile/MyProfile'
+import MedicalCard from './components/MedicalCard/MedicalCard'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/profile/dashboard' element={<Profile />} />
           <Route path='/profile/appointments' element={<ProfileApointments />} />
           <Route path='/profile/myprofile' element={<MyProfile />} />
+          <Route path='/profile/medical-card' element={<MedicalCard />} />
           <Route path='/book-an-appointment' element={<BookAnAppoinment />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />

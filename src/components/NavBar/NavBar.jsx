@@ -15,7 +15,7 @@ function NavBar() {
   }
 
   return (
-    <div className='flex justify-between w-full h-18 items-center px-10 md:px-32 bg-green-600 relative'>
+    <div className='flex justify-between w-full h-18 items-center px-10 md:px-32 bg-green-600 relative z-30'>
       {/* Logo */}
       <img src={Logo} className="h-14 w-14" />
       {
