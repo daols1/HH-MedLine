@@ -5,10 +5,10 @@ import hospital from '../../assets/doctorServices/hospital.jpg'
 
 const styles = {
     heading: `text-3xl font-bold grid justify-center`,
-    gradientText: `text-center font-bold text-3xl bg-gradient-to-r from-green-500 via-green-100 to-green-300 inline-block text-transparent bg-clip-text`,
+    gradientText: `text-center font-bold text-3xl bg-gradient-to-r from-green-700 via-green-400 to-green-600 inline-block text-transparent bg-clip-text`,
     grid: `my-6 mx-auto w-full gap-5 md:w-[95%] lg:w-[80%] grid md:grid-cols-3 md:gap-3`,
     cardBg: `bg-green-800 py-4 px-3 rounded-xl`,
-    cardTwoBg: `bg-green-100 text-green-800 py-4 px-3 rounded-xl`,
+    cardTwoBg: `bg-green-200 text-green-800 py-4 px-3 rounded-xl`,
     cardH3: `text-xl font-bold my-5 grid justify-center md:justify-start`,
     cardImgDiv: `w-1/2 mt-4 grid justify-center mx-auto rounded-full border border-green-100`,
     cardImg: `rounded-full place-center`

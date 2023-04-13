@@ -3,7 +3,7 @@ import SectionOne from './SectionOne'
 import SectionTwo from './SectionTwo'
 
 const styles = {
-  home: `w-full bg-green-700`,
+  home: `w-full bg-green-100`, //bg-green-100
   honeContainer: `max-[1000px] flex flex-col w-[95%] h-full p-4 mx-auto text-green-100`,
 
 }

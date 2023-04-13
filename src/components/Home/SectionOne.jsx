@@ -3,19 +3,19 @@ import Doc1 from '../../assets/doctors/doctor1.png'
 
 const styles = {
   gridCont: `w-full grid md:grid-cols-2 gap-3 mt-[2rem]`,
-  gridText: `text-green-400  font-bold text-3xl md:text-4xl lg:text-5xl mx-auto`,
-  gradientText: `text-center font-bold text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-green-100 via-green-400 to-green-300 inline-block text-transparent bg-clip-text`,
+  gridText: `text-green-500  font-bold text-3xl md:text-4xl lg:text-5xl mx-auto `,
+  gradientText: `text-center font-bold text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-green-800 via-green-400 to-green-800 inline-block text-transparent bg-clip-text`,
   smallCont: `my-5 mx-auto`,
-  small: `text-gray-300 whitespace-pre-wrap text-xl`,
-  wealth: `text-3xl font-bold bg-gradient-to-r from-green-100 via-green-500 to-green-100 text-transparent inline-block bg-clip-text my-3`,
+  small: `text-gray-500 whitespace-pre-wrap text-xl`,
+  wealth: `text-3xl font-bold bg-gradient-to-r from-green-700 via-green-400 to-green-600 text-transparent inline-block bg-clip-text my-3`,
   buttonCont: `bg-gradient-to-r from-green-900 via-green-600 to-green-900 block md:inline-block rounded-3xl my-3 text-center`,
   button: `text-white py-3 px-4`,
   projects: `flex gap-4 justify-center sm:justify-start`,
   number: `flex flex-col`,
   numberNum : `flex`,
-  numPro: `text-md font-light text-gray-300 whitespace-wrap`,
+  numPro: `text-md font-light text-gray-500 whitespace-wrap`,
   // Image 
-  girdImage: `bg-green-600 rounded-tl-[40%]`,
+  girdImage: `bg-green-500 rounded-tl-[40%]`,
   // imgCont: `w-[80%] mx-auto`
   img: `cover w-[80%] h-full mx-auto border-[0.5rem] border-white rounded-t-[50%] bg-green-800 mt-4`
 }
@@ -48,8 +48,8 @@ const SectionOne = () => {
                 {/* Number 1 */}
                 <div className={styles.number}>
                   <div className={styles.numberNum}>
-                    <h2 className='text-2xl text-green-100 font-bold'>200</h2>
-                    <p className='text-2xl text-green-200 font-bold'>+</p>
+                    <h2 className='text-2xl text-green-800 font-bold'>200</h2>
+                    <p className='text-2xl text-green-500 font-bold'>+</p>
                   </div>
                   {/* Small Text  */}
                   <div>
@@ -63,8 +63,8 @@ const SectionOne = () => {
                   {/* Number 2*/}
                 <div className={styles.number}>
                   <div className={styles.numberNum}>
-                    <h2 className='text-2xl text-green-100 font-bold'>15K</h2>
-                    <p className='text-2xl text-green-200 font-bold'>+</p>
+                    <h2 className='text-2xl text-green-800 font-bold'>15K</h2>
+                    <p className='text-2xl text-green-500 font-bold'>+</p>
                   </div>
                   {/* Small Text  */}
                   <div>
@@ -77,8 +77,8 @@ const SectionOne = () => {
                   {/* Number 3 */}
                 <div className={styles.number}>
                   <div className={styles.numberNum}>
-                    <h2 className='text-2xl text-green-100 font-bold'>50</h2>
-                    <p className='text-2xl text-green-200 font-bold'>+</p>
+                    <h2 className='text-2xl text-green-800 font-bold'>50</h2>
+                    <p className='text-2xl text-green-500 font-bold'>+</p>
                   </div>
                   {/* Small Text  */}
                   <div>
