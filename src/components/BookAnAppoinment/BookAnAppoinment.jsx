@@ -6,8 +6,7 @@ import Select from 'react-select';
 import { AiOutlineLeft ,AiOutlineRight  } from "react-icons/ai";
 import './book.css'
 import { motion } from 'framer-motion'
-// import DatePicker from 'react-datepicker';
-// import 'react-datepicker/dist/react-datepicker.css';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
