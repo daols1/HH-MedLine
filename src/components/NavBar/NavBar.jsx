@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import Logo from '../../assets/logo.png'
+// import Logo from '../../assets/logo.png'
+import Logo from '../../assets/logo/4.png'
 import {BiMenuAltRight} from 'react-icons/bi'
 import {IoMdClose} from 'react-icons/io'
 import { motion } from 'framer-motion'
@@ -20,9 +21,10 @@ function NavBar() {
 
 
   return (
-    <div className='flex justify-between w-full h-18 items-center px-10 md:px-32 bg-green-600 relative z-30'>
+    <div className='flex justify-between w-full h-18 items-center px-10 md:px-32 bg-green-600 relative z-30 h-14'>
       {/* Logo */}
-      <img src={Logo} className="h-14 w-14" />
+      {/* <img src={Logo} className="h-14 w-14" /> */}
+      <h2 className='text-3xl font:[Chivo_Mono] self-center bg-clip-text text-transparent bg-gradient-to-r from-slate-200 to-slate-50 font-bold'>HH-Medline</h2>
       {
         // To show the mobile or normal menu 
         !nav || screenChcker ?
