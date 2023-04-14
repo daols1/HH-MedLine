@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "medical_cards",
+  "info": {
+    "singularName": "medical-card",
+    "pluralName": "medical-cards",
+    "displayName": "medical-card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "bloodGroup": {
+      "type": "enumeration",
+      "enum": [
+        "O",
+        "A",
+        "B",
+        "AB"
+      ]
+    },
+    "phoneNumber": {
+      "type": "string"
+    }
+  }
+}
