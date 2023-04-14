@@ -26,7 +26,7 @@ const SectionOne = () => {
             <div>
               <div className={styles.gridText}>
                  <p>We Are Ready to</p>
-                <span className={styles.gradientText}>Help Your Health</span>
+                <span className={styles.gradientText}>Help Your Healths</span>
                 <p>Problems</p>
               </div>
               {/* SMALL  */}
