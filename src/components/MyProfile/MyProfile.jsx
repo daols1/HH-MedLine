@@ -3,14 +3,15 @@ import { Link } from 'react-router-dom'
 
 function MyProfile() {
   return (
-    <div className='bg-green-50 px-10 md:px-32 pb-20'>
+    <>
     {/* Dashborad nav */}
-      <nav className='flex list-none py-2'>
+    <nav className='flex list-none py-6 flex-col md:flex-row px-10 md:px-32'>
         <li ><Link to='/profile' className='pr-2 mr-2 border-b hover:border-b-green-600 ' >Dashbord</Link></li>
         <li ><Link to='/profile/appointments' className='px-2 mx-2 border-b hover:border-b-green-600 ' >Appointments</Link></li>
         <li ><Link to='/profile/myprofile' className='px-2 mx-2 border-b hover:border-b-green-600 ' >My Profile</Link></li>
         <li ><Link to='/profile/medical-card' className='px-2 mx-2 border-b hover:border-b-green-600 ' >Medical Card</Link></li>
       </nav>
+    <div className='bg-green-50 px-10 md:px-32 pb-20'>
       <div className='flex flex-col sm:flex-row gap-16 pt-6'>
           {/* Main content */}
           <div className='flex flex-col gap-2 bg-white p-6 rounded-xl w-full sm:w-4/6 '>
@@ -43,6 +44,7 @@ function MyProfile() {
           </div>
       </div>
     </div>
+    </>
   )
 }
 
