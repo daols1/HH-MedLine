@@ -249,6 +249,9 @@ function SignUp() {
               <Link to='/login' className='text-green-500 font-bold'>
                 Sign in instead
               </Link>
+              <Link to='/sign-up-doc' className='text-green-500 font-bold block'>
+                Sign Up as Doc
+              </Link>
             </p>
           </div>
         </form>

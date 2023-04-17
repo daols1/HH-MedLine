@@ -68,13 +68,16 @@ function MedicalCardDetails() {
     
     const submitHandler = (data) => {
         console.log("Form submitted", data)
+        // Post to the backend.
+        const dataReal = {
+            "data":data
+        }
+        axios.post("http://localhost:1337/api/medical-cards/", dataReal)
+        .then(response => {
+            console.log(response.data)
+        })
         // Clear form state.
         reset()
-        // Post to the backend.
-        axios.post("http://localhost:1337/api/medical-cards/", dataPost)
-            .then(response => {
-                console.log(response.data)
-            })
         // Mutation function.
         // const {mutate,isLoading, isError} = useMutation({
         //     mutationFn: (data) => {

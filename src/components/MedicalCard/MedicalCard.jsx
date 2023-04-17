@@ -54,7 +54,7 @@ function MedicalCard() {
     <div className='px-10 md:px-32'>
         <div>
             This is the fetched data.
-            {data.data[0].attributes.name}
+            {data.data[0]?.attributes.name}
         </div>
         <Link 
         to='/profile/medical-card/edit-card'
