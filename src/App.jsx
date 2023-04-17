@@ -12,6 +12,8 @@ import ProfileApointments from './components/ProfileApointments/ProfileApointmen
 import MyProfile from './components/MyProfile/MyProfile'
 import MedicalCard from './components/MedicalCard/MedicalCard'
 import MedicalCardDetails from './components/MedicalCardDetails/MedicalCardDetails'
+import SignupAsDoc from './components/SignupAsDoc/SignupAsDoc'
+import SearchDoc from './components/SearchDoc/SearchDoc'
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
           <Route path='/book-an-appointment' element={<BookAnAppoinment />} />
           <Route path='/login' element={<Login />} />
           <Route path='/signup' element={<SignUp />} />
+          <Route path='/sign-up-doc' element={<SignupAsDoc />} />
+          <Route path='/search-doc' element={<SearchDoc />} />
         </Route>
         <Route path='/*' element={<NotFound />} />
       </Routes >
