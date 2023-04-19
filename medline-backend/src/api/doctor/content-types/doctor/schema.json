@@ -32,6 +32,20 @@
     },
     "imgLink": {
       "type": "string"
+    },
+    "pic": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hospitalName": {
+      "type": "string"
     }
   }
 }

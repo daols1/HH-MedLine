@@ -46,7 +46,7 @@ function SearchDocComp({searchTerm}) {
             return(
                 <div 
                 key={item.id}
-                className='border flex flex-col rounded-t-xl'
+                className='flex flex-col rounded-t-xl'
                 >   
                     <img 
                     src={item.imgLink} 
@@ -56,6 +56,10 @@ function SearchDocComp({searchTerm}) {
                 <div className='p-3 text-white bg-gradient-to-br from-green-600 to-green-800 flex flex-col gap-2 rounded-b-xl'>
                         <h1>{item.attributes.name}</h1>
                         <p>Specialty: {item.attributes.specialty}</p>
+                        <p>Location: {item.attributes.subLocation}, {item.attributes.location}</p>
+                        <button
+                        className='p-2 bg-slate-100 hover:bg-slate-200 text-black rounded-xl'
+                        >Book Doc</button>
                     </div>
                 </div>
             )
