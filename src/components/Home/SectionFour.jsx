@@ -15,18 +15,18 @@ import 'swiper/css/pagination';
 import "swiper/css/navigation";
 
 const styles = {
-    gridCont: `grid w-full md:grid-cols-2 gap-[4rem]`,
+    gridCont: `grid w-full md:grid-cols-2 gap-2 md:gap-0 md:px-20 py-10 md:py-0`,
     gradientText: `text-center font-bold text-2xl md:text-3xl bg-gradient-to-r from-green-800 via-green-400 to-green-800 inline-block text-transparent bg-clip-text py-3`,
-    buttonCont: `bg-gradient-to-r from-green-900 via-green-600 to-green-900 block rounded-3xl my-6 text-center w-full md:w-1/2 mx-auto grid justify-center hover:shadow-xl`,
+    buttonCont: `bg-gradient-to-r from-green-900 via-green-600 to-green-900 block rounded-3xl my-6 text-center w-full mx-auto grid justify-center hover:shadow-xl`,
     button: `text-white py-3 px-4 grid justify-center`,
-    card: `bg-green-500 rounded-l-xl rounded-br-xl p-4 w-full md:w-2/3 text-white`,
+    card: `bg-green-500 rounded-l-xl rounded-br-xl p-4 w-full  text-white`,
     imagePagination: `grid place-items-center w-10/12 aspect-square pb-4 h-9/12`,
-    girdImage: `bg-green-300 rounded-l-[50%] border-[1rem] border-white shadow-xl shadow-green-500 overflow-hidden aspect-square `,
+    girdImage: `bg-green-300 rounded-l-[50%] border-[1rem] border-white shadow-md shadow-green-500 overflow-hidden aspect-square `,
 }
 
 const SectionFour = () => {
   return (
-    <section className='my-[8rem] md:h-screen md:bg-green-50'>
+    <section className='my-[8rem] md:h-screen'>
         <article className={styles.gridCont}>
             {/* ==== TEXT ==== */}
             <div className='w-[18rem] aspect-square'>
@@ -37,7 +37,7 @@ const SectionFour = () => {
                 <div className={styles.card}>
                     {/* <img src={Doctor1} alt="Doctor" /> */}
                     <p className='font-thin text-md py-2 italic'>Orthpedy</p>
-                    <h4 className='text-white font-semibold text-2xl md:w-1/2 whitespace-pre-wrap '>Dr. James Wellington</h4>
+                    <h4 className='text-white font-semibold text-2xl md:w-2/3 whitespace-pre-wrap '>Dr. James Wellington</h4>
                     <small className='py-3'>Read More</small>
                 </div>
                 {/* ===BUTTON === */}
@@ -46,7 +46,7 @@ const SectionFour = () => {
                 </div>
             </div>
             {/* === IMAGE ===  */}
-            <div className='w-[18rem]'>
+            <div className='w-[18rem] sm:w-[36rem] border-0'>
             <Swiper className={styles.imagePagination} 
             modules={[Navigation, Pagination]}
             navigation

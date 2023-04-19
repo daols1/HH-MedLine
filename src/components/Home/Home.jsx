@@ -3,6 +3,7 @@ import SectionOne from './SectionOne'
 import SectionTwo from './SectionTwo'
 import SectionThree from './SectionThree'
 import SectionFour from './SectionFour'
+import SectionFive from './SectionFive'
 
 const styles = {
   home: `w-full bg-white px-10 md:px-32`, //bg-green-100
@@ -18,7 +19,7 @@ function Home() {
           <SectionTwo/>
           <SectionThree/>
           <SectionFour/>
-
+          <SectionFive/>
         </div>
     </div>
   )
