@@ -1,12 +1,12 @@
 import React from 'react'
-import Doc1 from '../../assets/doctors/doctor1.png'
+import Doc1 from '../../assets/doctors/doctornurse.png'
 
 const styles = {
-  gridCont: `w-full grid md:grid-cols-2 gap-3 mt-[2rem]`,
-  gridText: `text-green-500  font-bold text-3xl md:text-4xl lg:text-5xl mx-auto `,
+  gridCont: `w-full  md:h-full grid md:grid-cols-2 gap-3 my-[2rem]`,
+  gridText: `text-slate-800  font-bold text-3xl md:text-4xl lg:text-5xl mx-auto `,
   gradientText: `text-center font-bold text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-green-800 via-green-400 to-green-800 inline-block text-transparent bg-clip-text`,
-  smallCont: `my-5 mx-auto`,
-  small: `text-gray-500 whitespace-pre-wrap text-xl`,
+  smallCont: `my-5 mx-auto `,
+  small: `text-gray-500 whitespace-pre-wrap text-xl w-2/3 block`,
   wealth: `text-3xl font-bold bg-gradient-to-r from-green-700 via-green-400 to-green-600 text-transparent inline-block bg-clip-text my-3`,
   buttonCont: `bg-gradient-to-r from-green-900 via-green-600 to-green-900 block md:inline-block rounded-3xl my-3 text-center`,
   button: `text-white py-3 px-4`,
@@ -15,9 +15,9 @@ const styles = {
   numberNum : `flex`,
   numPro: `text-md font-light text-gray-500 whitespace-wrap`,
   // Image 
-  girdImage: `bg-green-500 rounded-tl-[40%]`,
+  girdImage: `bg-green-50 rounded-tl-[40%]`,
   // imgCont: `w-[80%] mx-auto`
-  img: `cover w-[80%] h-full mx-auto border-[0.5rem] border-white rounded-t-[50%] bg-green-800 mt-4`
+  img: `cover w-[80%] h-full mx-auto border-[0.5rem] border-white rounded-t-[50%] bg-green-300 mt-4 shadow-xl relative z-5`
 }
 
 const SectionOne = () => {
@@ -34,8 +34,8 @@ const SectionOne = () => {
                 <small className={styles.small}>
                   In times like today, your health is very important. 
                   We are here to help you with your health consultation.
-                  <h5 className={styles.wealth}>Health is Wealth!</h5>
                 </small>
+                  <h5 className={styles.wealth}>Health is Wealth!</h5>
               </div>
               {/* BUTTON  */}
               <div className={styles.buttonCont}>
@@ -90,7 +90,9 @@ const SectionOne = () => {
               </div>
             </div>
             <div className={styles.girdImage}>
-              <img className={styles.img} src={Doc1} alt="Doctor" />
+              <div className={styles.img}>
+              <img className="w-[120%] h-full overflow-x contain absolute z-10"  src={Doc1} alt="Doctor" />
+              </div>
             </div>
           </section>
   )
