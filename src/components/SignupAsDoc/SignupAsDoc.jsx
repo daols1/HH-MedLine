@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'
 import { redirect } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import { useState } from 'react';
 
 
 
@@ -20,17 +21,51 @@ function SignupAsDoc() {
     const {register, handleSubmit, control, formState, reset } = useForm()
     const { errors, isValid } = formState
 
+    // State for file
+
+    const [file, setFile] = useState()
 
     const submitHandler = (data) => {
         // Post to backend.
         const dataReal = {
             "data":data
         }
+
+        console.log(data)
+
+        const formData = new FormData()
+
+        formData.append('file', data.file[0])
+
+        console.log(dataReal)
+        // Post picture first.
+        const postRequest = async () => {
+            // Post pic.
+            // let file = new dataReal()
+            // file.append
+            // Post form data.
+            const posted = await axios.post("http://localhost:1337/api/doctors/", dataReal)
+            console.log(posted.data)
+            // .then(response => {
+            //     console.log(response.data)
+            // })
+        }
+
+        // Pic post
+
+        const picPost = async () => {
+            const post = await axios.post("http://localhost:1337/api/upload/", formData)
+            console.log(post.data)
+        }
+
+        const combine = () => {
+            postRequest()
+            picPost()
+        }
+
         toast.promise(
-            axios.post("http://localhost:1337/api/doctors/", dataReal)
-            .then(response => {
-                console.log(response.data)
-            }),{
+            postRequest
+            ,{
                 pending: "Signing Up...", 
                 success: "Done!",
                 error:"You no get good network"
@@ -133,6 +168,20 @@ function SignupAsDoc() {
                 className='p-2 border-green-400 rounded-xl'
                 />
                 <p className='text-red-500 text-xs'>{errors.specialty?.message}</p>
+                <label htmlFor="hospitalName">Hospital Name:</label>
+                <input 
+                type="text" 
+                name="hospitalName" 
+                id="hospitalName" 
+                placeholder='Mobonike Hospital' 
+                {
+                    ...register("hospitalName", {
+                        required:"This field is required!!",
+                    })
+                }
+                className='p-2 border-green-400 rounded-xl'
+                />
+                <p className='text-red-500 text-xs'>{errors.hospitalName?.message}</p>
                 <label htmlFor="description">Short Description:</label>
                 <textarea
                 type="text" 
@@ -147,6 +196,21 @@ function SignupAsDoc() {
                 className='p-2 border-green-400 rounded-xl'
                 />
                 <p className='text-red-500 text-xs'>{errors.description?.message}</p>
+                <label htmlFor="specialty">Picture:</label>
+                <input 
+                type="file" 
+                name="file" 
+                id="file" 
+                onChange={(e) => setFile(e.target.files)}
+                {
+                    ...register("file", {
+                        required:"Upload Your pic mister man",
+
+                    })
+                }
+                className='p-2 border-green-400 rounded-xl'
+                />
+                <p className='text-red-500 text-xs'>{errors.file?.message}</p>
                 <button
                 className='p-2 bg-green-600 hover:bg-green-800 text-white rounded-xl'
                 >Submit</button>
