@@ -16,7 +16,7 @@ const styles = {
 
 const SectionTwo = () => {
   return (
-    <section className='my-[4rem] md:my-[2rem] md:h-screen'>
+    <section className='my-[4rem] md:my-[5rem] md:h-screen'>
         <div className={styles.heading}>
             <h1>Our <span className={styles.gradientText}>Main Services</span></h1>
             <h2 className='text-center'>Categories</h2>

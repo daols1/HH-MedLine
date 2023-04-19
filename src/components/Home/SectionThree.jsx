@@ -8,8 +8,8 @@ import Calendar from '../../assets/specialServices/calendar.png'
 const styles = {
     gridCont: `grid md:grid-cols-2 gap-[3rem]`,
     gridImg: `order-2 md:order-first`,
-    ImgDiv: `w-[70%]  mx-auto bg-green-300 rounded-t-[50%] border-[1rem] border-white p-3 shadow-2xl h-full shadow-green-500 relative z-0`,
-    Img: `h-full md:h-1/2  w-full relative z-1`,
+    ImgDiv: `w-[70%]  mx-auto bg-green-300 rounded-t-[50%] border-[1rem] border-white p-3 shadow-2xl md:h-[33.2rem] shadow-green-500 relative z-0 h-screen md:mt-[4rem]`,
+    Img: ` md:h-1/2  w-full relative z-1`,
     gridText: `text-slate-800`,
     gridHeading: 'font-bold text-3xl text-center md:text-4xl tracking-wider md:text-start my-3',
     gridP: `text-gray-300 text-md justify-start w-full md:text-md tracking-wide whitespace-prewrap md:w-[90%]  grid md:justify-center font-semibold`,
@@ -25,13 +25,13 @@ const styles = {
 
 const SectionThree = () => {
   return (
-    <section className='my-[2rem] h-screen'>
+    <section className='my-[8rem] md:h-screen'>
         <article className={styles.gridCont}>
             {/* =====IMAGE ====  */}
             <div className={styles.gridImg}>
                 <div className={styles.ImgDiv}>
                     <div className={styles.Img}>
-                        <img className='w-full bg-contain h-full md:h-screen -mt-[8rem] absolute z-10 block'  src={DoctorImg} alt="Doctor" />
+                        <img className='w-full bg-contain h-screen -mt-10 md:-mt-[6.8rem] absolute z-10 md:block'  src={DoctorImg} alt="Doctor" />
                     </div>
                 </div>
             </div>

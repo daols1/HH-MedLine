@@ -6,7 +6,7 @@ const styles = {
   gridText: `text-slate-800  font-bold text-3xl md:text-4xl lg:text-5xl mx-auto `,
   gradientText: `text-center font-bold text-3xl md:text-4xl lg:text-5xl bg-gradient-to-r from-green-800 via-green-400 to-green-800 inline-block text-transparent bg-clip-text`,
   smallCont: `my-5 mx-auto `,
-  small: `text-gray-500 whitespace-pre-wrap text-xl w-2/3 block`,
+  small: `text-gray-500 whitespace-pre-wrap text-xl w-full md:w-2/3 block`,
   wealth: `text-3xl font-bold bg-gradient-to-r from-green-700 via-green-400 to-green-600 text-transparent inline-block bg-clip-text my-3`,
   buttonCont: `bg-gradient-to-r from-green-900 via-green-600 to-green-900 block md:inline-block rounded-3xl my-3 text-center`,
   button: `text-white py-3 px-4`,
@@ -17,7 +17,7 @@ const styles = {
   // Image 
   girdImage: `bg-green-50 rounded-tl-[40%]`,
   // imgCont: `w-[80%] mx-auto`
-  img: `cover w-[80%] h-full mx-auto border-[0.5rem] border-white rounded-t-[50%] bg-green-300 mt-4 shadow-xl relative z-5`
+  img: `cover w-full h-screen md:w-[80%] md:h-full mx-auto border-[0.5rem] border-white rounded-t-[50%] bg-green-300 mt-4 shadow-xl relative z-5`
 }
 
 const SectionOne = () => {

@@ -2,6 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+div.swiper-pagination {
+  margin-top: 5rem;
+  color: green;
+  padding-top: 4rem;
+  width: 50%;
+  margin-inline: auto;
+  overflow: auto;
+}
+
+.swiper-pagination-bullet {
+  background-color: #161817;
+  opacity: 0.5;
+  margin: 0 0.5rem;
+  margin-bottom: 2rem;
+}
+.swiper-pagination-bullet:hover {
+  background-color: #000;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  border-radius: 50%;
+  background-color: white;
+  width: 5px;
+  aspect-ratio: 1/1;
+  padding: 30px;
+  opacity: 0.3;
+  transition: opacity 0.25s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  div.swiper-pagination {
+    width: 100%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 20px;
+    font-size: 2px;
+    width: 2px;
+    aspect-ratio: 1/1;
+    color: red;
+  }
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
