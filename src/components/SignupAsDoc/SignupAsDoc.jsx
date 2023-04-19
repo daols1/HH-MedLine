@@ -64,7 +64,7 @@ function SignupAsDoc() {
         }
 
         toast.promise(
-            combine
+            postRequest
             ,{
                 pending: "Signing Up...", 
                 success: "Done!",
