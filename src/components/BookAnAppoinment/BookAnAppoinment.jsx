@@ -4,6 +4,7 @@ import doc2 from '../../assets/doc2.png'
 import doc3 from '../../assets/doc3.png'
 import Select from 'react-select';
 import { AiOutlineLeft ,AiOutlineRight  } from "react-icons/ai";
+import { useNavigate } from 'react-router';
 // import DatePicker from 'react-datepicker';
 // import 'react-datepicker/dist/react-datepicker.css';
 
@@ -199,7 +200,11 @@ const BookAnAppointment = () => {
   }
   const [healthFormDisplay, setHealthFormDisplay] = useState(false)
 
+  const navigate = useNavigate()
 
+  const redirect = () => {
+    navigate('/')
+  }
 
   return (
     <>
@@ -329,7 +334,9 @@ const BookAnAppointment = () => {
                         <label className='font-medium capitalize mb-1 text-base' htmlFor="msg">Additional Message</label>
                         <input className='bg-green-100  p-3 rounded outline-zinc-300 ' type="text" placeholder='Short description of any health challenge ....' />
                     </div>
-                <button className='bg-green-600  mr-auto ml-auto mt-0 mb-0 text-center cursor-pointer rounded-lg w-[150px] text-white h-[50px]'>Confirm</button>
+                <button 
+                onClick={() => redirect()}
+                className='bg-green-600  mr-auto ml-auto mt-0 mb-0 text-center cursor-pointer rounded-lg w-[150px] text-white h-[50px]'>Confirm</button>
             </form>
             </div> : null
      }
