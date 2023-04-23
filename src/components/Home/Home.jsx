@@ -6,7 +6,7 @@ import SectionFour from './SectionFour'
 
 const styles = {
   home: `w-full bg-white px-10 md:px-32`, //bg-green-100
-  honeContainer: ` flex flex-col w-full h-full p-4 mx-auto text-slate-800`,
+  honeContainer: ` flex flex-col w-full h-full mx-auto text-slate-800`,
 
 }
 // a random comment
